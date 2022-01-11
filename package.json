@@ -1,0 +1,31 @@
+{
+  "name": "@mdev/cli",
+  "version": "1.0.0",
+  "description": "A simple CLI to generate frontend projects on nextJs",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "bin": {
+    "@mdev/cli": "dist/index.js",
+    "mdev": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "mdev": "node dist/index.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^8.1.3",
+    "@types/node": "^17.0.8",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "inquirer": "^8.2.0",
+    "ora": "^5.0.1"
+  }
+}
